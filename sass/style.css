@@ -9,6 +9,10 @@ body {
   font-family: "Open Sans", sans serif;
 }
 
+h2 {
+  font-family: Poppins;
+}
+
 .banner {
   min-height: 90vh;
   background-image: url(../images/bg-hero-desktop.svg);
@@ -16,6 +20,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #edfbfe;
+}
+.banner p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #00252e;
+}
+
+.get-started {
+  background-color: #ff52bf;
+  color: #fff;
+}
+.get-started:hover {
+  color: #ff52bf;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner h2,
+.banner p {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
