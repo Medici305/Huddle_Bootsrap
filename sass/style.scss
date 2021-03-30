@@ -15,8 +15,14 @@ body {
 }
 
 h2,
+h3,
 h4 {
   font-family: Poppins;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 // Section 1
@@ -36,8 +42,19 @@ h4 {
 
 // Section 2
 .cards {
-  min-height: 150vh;
   margin: 5rem 0;
+}
+
+// Section 3
+.footer {
+  height: 70vh;
+  background: $Very_Dark_Cyan;
+  margin-top: 10rem;
+  overflow-x: hidden;
+  .nav-bottom {
+    position: relative;
+    top: 10rem;
+  }
 }
 
 // Buttons
@@ -50,12 +67,29 @@ h4 {
   }
 }
 
+// Copyright
+.copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  margin-top: 5rem;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
 // Responsive
 @media only screen and (max-width: 768px) {
   h2,
   h4,
   p {
     text-align: center;
+  }
+  .footer {
+    min-height: 110vh;
+    p {
+      text-align: left;
+    }
   }
 }
 

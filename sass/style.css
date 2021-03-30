@@ -10,8 +10,14 @@ body {
 }
 
 h2,
+h3,
 h4 {
   font-family: Poppins;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .banner {
@@ -29,8 +35,18 @@ h4 {
 }
 
 .cards {
-  min-height: 150vh;
   margin: 5rem 0;
+}
+
+.footer {
+  height: 70vh;
+  background: #00252e;
+  margin-top: 10rem;
+  overflow-x: hidden;
+}
+.footer .nav-bottom {
+  position: relative;
+  top: 10rem;
 }
 
 .get-started {
@@ -42,11 +58,28 @@ h4 {
   background-color: #fff;
 }
 
+.copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  margin-top: 5rem;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   h2,
 h4,
 p {
     text-align: center;
+  }
+
+  .footer {
+    min-height: 110vh;
+  }
+  .footer p {
+    text-align: left;
   }
 }
 @media only screen and (min-width: 992px) {
