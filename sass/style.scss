@@ -14,7 +14,8 @@ body {
   }
 }
 
-h2 {
+h2,
+h4 {
   font-family: Poppins;
 }
 
@@ -33,6 +34,12 @@ h2 {
   }
 }
 
+// Section 2
+.cards {
+  min-height: 150vh;
+  margin: 5rem 0;
+}
+
 // Buttons
 .get-started {
   background-color: $Pink;
@@ -45,10 +52,15 @@ h2 {
 
 // Responsive
 @media only screen and (max-width: 768px) {
-  .banner {
-    h2,
-    p {
-      text-align: center;
-    }
+  h2,
+  h4,
+  p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card-pad {
+    padding: 0 7rem;
   }
 }

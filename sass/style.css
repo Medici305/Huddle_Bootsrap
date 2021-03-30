@@ -9,7 +9,8 @@ body {
   font-family: "Open Sans", sans serif;
 }
 
-h2 {
+h2,
+h4 {
   font-family: Poppins;
 }
 
@@ -27,6 +28,11 @@ h2 {
   color: #00252e;
 }
 
+.cards {
+  min-height: 150vh;
+  margin: 5rem 0;
+}
+
 .get-started {
   background-color: #ff52bf;
   color: #fff;
@@ -37,9 +43,15 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner h2,
-.banner p {
+  h2,
+h4,
+p {
     text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card-pad {
+    padding: 0 7rem;
   }
 }
 
