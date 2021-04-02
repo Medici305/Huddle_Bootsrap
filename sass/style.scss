@@ -12,6 +12,7 @@ body {
     size: 18px;
     family: "Open Sans", sans serif;
   }
+  overflow-x: hidden;
 }
 
 h2,
@@ -47,7 +48,7 @@ a {
 
 // Section 3
 .footer {
-  height: 70vh;
+  overflow-y: hidden;
   background: $Very_Dark_Cyan;
   margin-top: 10rem;
   overflow-x: hidden;
@@ -67,17 +68,6 @@ a {
   }
 }
 
-// Copyright
-.copyright {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  color: #fff;
-  margin-top: 5rem;
-  font-size: 1rem;
-  padding-right: 1rem;
-}
-
 // Responsive
 @media only screen and (max-width: 768px) {
   h2,
@@ -93,8 +83,17 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .footer {
+    min-height: 90vh;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .card-pad {
     padding: 0 7rem;
+  }
+  .footer {
+    min-height: 70vh;
   }
 }
