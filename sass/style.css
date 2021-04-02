@@ -30,9 +30,15 @@ a {
   background-color: #edfbfe;
 }
 .banner p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 2rem;
+  padding-right: 3rem;
   color: #00252e;
+}
+
+.intro button {
+  padding: 0rem;
+  width: 50%;
 }
 
 .cards {
@@ -53,6 +59,7 @@ a {
 .get-started {
   background-color: #ff52bf;
   color: #fff;
+  padding: 1rem 2rem;
 }
 .get-started:hover {
   color: #ff52bf;
@@ -67,15 +74,30 @@ p {
   }
 
   .footer {
-    min-height: 110vh;
+    min-height: 100vh;
   }
   .footer p {
     text-align: left;
+  }
+
+  .intro p {
+    padding-right: 0rem;
+  }
+  .intro button {
+    width: 70%;
+  }
+
+  .get-started {
+    padding: 0.5rem 1rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .footer {
     min-height: 90vh;
+  }
+
+  .get-started {
+    padding: 0.55rem 1.05rem;
   }
 }
 @media only screen and (min-width: 992px) {

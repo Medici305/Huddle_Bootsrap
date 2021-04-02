@@ -35,9 +35,17 @@ a {
   background-size: cover;
   background-color: #edfbfe;
   p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2rem;
+    padding-right: 3rem;
     color: $Very_Dark_Cyan;
+  }
+}
+
+.intro {
+  button {
+    padding: 0rem;
+    width: 50%;
   }
 }
 
@@ -62,6 +70,7 @@ a {
 .get-started {
   background-color: $Pink;
   color: #fff;
+  padding: 1rem 2rem;
   &:hover {
     color: $Pink;
     background-color: #fff;
@@ -76,16 +85,30 @@ a {
     text-align: center;
   }
   .footer {
-    min-height: 110vh;
+    min-height: 100vh;
     p {
       text-align: left;
     }
+  }
+  .intro {
+    p {
+      padding-right: 0rem;
+    }
+    button {
+      width: 70%;
+    }
+  }
+  .get-started {
+    padding: 0.5rem 1rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .footer {
     min-height: 90vh;
+  }
+  .get-started {
+    padding: 0.55rem 1.05rem;
   }
 }
 
